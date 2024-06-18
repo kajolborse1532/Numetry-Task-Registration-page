@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  color: red;
+  /* background-color: #c5f3dc; */
+}
+.outercontainer{
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://img.freepik.com/free-photo/view-spectacular-nature-landscape_23-2150763636.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1718582400&semt=ais_user);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coverflim{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(206, 26, 26, 0.367);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontainer{
+  background-color: #26252595;
+  width: 30%;
+  height: auto;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+h1{
+  text-align: center;
+}
+
+.name{
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+.name>div{
+  width: 50%;
+}
+
+/* input Field */
+input,select{
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 30px;
+  padding: 0 7px;
+  border-radius: 5px;
+  color: #000;
+  font-size: medium;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+input:hover,select:hover{
+  background-color: transparent;
+  border-bottom: 3px solid white;
+  color: #fff;
+}
+option{
+  background-color: transparent;
+  color: #000;
+}
+
+/* line below registration */
+.line{
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* check box */
+.checkbox{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#checkbox{
+  /* height: 10px; */
+  width: 20px;
+  display: inline;
+  font-weight: 600;
+}
+#term{
+  display: inline;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+span{
+  text-decoration: underline;
+  color: rgb(7, 115, 246);
+}
+
+/* button */
+button{
+  height: 30px;
+  background-color: rgb(90, 29, 12);
+  outline: none;
+  border: none;
+  color:#fff;
+  font-weight: 700;
+  font-size: medium;
+  padding: 7px 21px;
+  border-radius: 50px;
+  float: right;
+}
+
+button:hover{
+  /* scale: 1.2; */
+  background-color: transparent;
+  border: 2px solid #a71c1c;
+}
+
+/* For Mobile view the from will be */
+
+
+@media (max-width : 600px){
+  .maincontainer{
+    height: 100vh;
+    width: 100vw;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  #but{
+    display: flex;
+    justify-content: center;
+  }
+  .name{
+    flex-direction: column;
+  }
+
+  .name> div{
+    width: 100%;
+  }
+
+}
